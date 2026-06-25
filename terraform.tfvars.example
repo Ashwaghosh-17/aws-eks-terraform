@@ -1,0 +1,14 @@
+aws_region          = "ap-south-1"
+cluster_name        = "devops-eks"
+cluster_version     = "1.33"
+project_name        = "microshield-bpo"
+ecr_repository_name = "webapp"
+allowed_ssh_cidr    = "YOUR_PUBLIC_IP/32"
+key_name            = null
+notification_email  = "alerts@example.com"
+
+tags = {
+  Environment = "dev"
+  ManagedBy   = "terraform"
+  Project     = "microshield-bpo"
+}
